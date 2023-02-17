@@ -22,12 +22,16 @@
 }
 
 /**==================================================================
-**			Scrollbar 
+**			Base 
 **=================================================================*/
-::selection {
-  @apply bg-blue-300;
+body {
+  background: theme(colors.zinc.900);
+  color: theme(colors.white);
 }
 
+/**==================================================================
+**			Scrollbar 
+**=================================================================*/
 ::-webkit-scrollbar {
   width: 4px; /* width of the entire scrollbar */
   height: 4px; /* width of the entire scrollbar */

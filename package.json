@@ -8,7 +8,8 @@
     "build": "vite build && node Create200Page.js",
     "preview": "vite preview",
     "test": "vitest",
-    "deploy": "npm run build && surge ./dist numerology-toolbelt.surge.sh"
+    "deploy": "npm run build && surge ./dist numerology-toolbelt.surge.sh",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
@@ -42,9 +43,5 @@
     "ts-pattern": "^4.0.6",
     "type-fest": "^3.5.3",
     "vitest": "^0.26.3"
-  },
-  "quokka": {
-    "stdEsm": false,
-    "nativeEsm": true
   }
 }
